@@ -1,0 +1,40 @@
+
+
+/////////////////////ALGORITMO///////////////////////
+
+peso = l*9; //se a primeira linha, segunda ou terceira
+
+//Letra ou caracter especial
+if(fureiUmasDasTresPrimeirasLinhas){
+    if(qtdFuros == 2){//Grande chance de ser letra(. pode se também)
+        peso = 8 * linha + Math.round(linha / 2);
+    }else{//caracter especial
+
+    }
+    numeroDecimal =  64 + (valorColuna + peso);
+}else{
+    if(qtdFuros == 1){//Numero certeza
+       numeroDecimal = 47+(valorColuna+1)
+    }else{//caracter especias
+
+    }
+}
+
+caracter = String.fromCharCode(numeroDecimal)
+   
+/////////////////////////////////////////////////////
+
+O que falta? Caracter especial e o ponto
+
+////////////////////////DADOS///////////////////////
+Para numeros: sem as duas primeiras linhas e seu valor
+
+Gerar um vetor do alfabeto contendo em cada posição um caracter
+
+
+mais de 3 perfuros = caracter especial
+
+
+Apenas uma no maximo das primeiras 3 linhas são preenchidas
+
+/////////////////////////////////////////////////////

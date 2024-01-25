@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Punched Card</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="icon" href="./assets/img/logoColoridp.png" type="image/png">
+    </head>
+    <body>
+        <nav class=" navbar-expand-lg d-flex navbar navbar-dark bg-primary mb-5" >
+            <div class="container-fluid">
+              <img src="./assets/img/logo.png" alt="" width="20" class="mx-2">  
+              <a class="navbar-brand p-2 flex-grow-1 fw-bold" href="#">Punched Card</a>
+              <button class="navbar-toggler p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" style="margin-left:60% !important;"  id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="aHome" aria-current="page" onclick="btnActiveHome()">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="aCrip" onclick="btnActiveCriptofrafia()">Criptografar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="aDesCrip" onclick="btnActiveDesCriptofrafia()">Descriptografar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-disabled="true">Sobre</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <!-- Aqui é aonde iremos fazer o home da pagina -->
+        <main id="mainId" class="container">
+            <article class="row" id="articleHome">
+                <div class="left offset-md-1 my-4 col-md-4">
+                    <img src="./assets/img/cartao.jpg" alt="" height="200">
+                </div>
+                <div class="right offset-md-1 col-md-6">
+                    <h1 class="text-center my-2">Punched Card</h1>
+                    <p class="my-3">
+                        O cartão perfurado é um meio de armazenamento de dados inventado por Joseph Marie Jacquard em 1801. 
+                        É um cartão de papelão ou cartolina que possui perfurações que representam dados binários. <a href="https://pt.wikipedia.org/wiki/Cart%C3%A3o_perfurado">Acesse</a>
+                    </p>
+                    <div class="text-center my-5">
+                        <button class="btn btn-primary" onclick="btnActiveCriptofrafia()">Criptografar</button>
+                        <button class="mx-3 btn btn-primary" onclick="btnActiveDesCriptofrafia()">Descriptografar</button>
+                    </div>
+            </article>
+            <article class="row" id="articleCriptografia">
+                <div class="col-md-12 ">
+                    <div class="mx-auto">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Sua Mensagem</span>
+                                    <input type="text" id="inputId" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button type="button" class="offset-md-11 col-md-1 btn btn-outline-primary">Baixar</button>
+                                <!-- eu quero uma div na estrutura de um cartão perfurado -->
+                                <div class="mx-4 my-4 cardPunched" id="divPai">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="row" id="articleDesCriptografia">
+                <div class="col-md-12 text-center">
+                    <div class="mx-auto">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="col-md-10">
+                                    <div class="mb-3">
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Mensagem Descriptografada</span>
+                                    <input type="text" id="inputRes" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <section class="container-fluid ">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-12 ">
+                    <p class="fst-italic text-center mb-5" style="color: gray;">
+                        "Esse projeto foi um pedido que atendemos do professor Josenalde, que queria um site de
+                         <br>criptografia e descriptografia de mensagens do cartão perfurado!"
+                    </p>
+                </div>
+                <div class="col-md-10 d-flex my-5">
+                    <div class="card p-3 py-4">
+                        <div class="text-center">
+                            <img src="./assets/img/imgFellipe.jpg" width="100" class="rounded-circle">
+                        </div>
+                        <div class="text-center mt-3">
+                            <span class="bg-primary p-1 px-4 rounded text-white">Developer</span>
+                            <h5 class="mt-2 mb-0">Fellipe Patrick</h5>
+                            <div class="px-4 mt-1">
+                                <p class="fonts">
+                                    Olá, me chamo Fellipe e sou estudante de Análise e Desenvolvimento de Sistemas na EAJ-UFRN. Atualmente estou no 3º período.
+                                </p>
+                            
+                            </div>  
+                                <ul class="social-list">
+                                <li><i class="fa fa-google"></i></li>
+                                <li><i class="fa fa-linkedin"></i></li>
+                                <li><i class="fa fa-github"></i></li>
+                            </ul>
+                        </div>  
+                    </div>
+                    <div class="card p-3 py-4 mx-3">
+                        <div class="text-center">
+                            <img src="./assets/img/imgVitinho.jpg" width="100" class="rounded-circle">
+                        </div>
+                        <div class="text-center mt-3">
+                            <span class="bg-primary p-1 px-4 rounded text-white">Developer</span>
+                            <h5 class="mt-2 mb-0">Vitor Carvalho</h5>
+                            <div class="px-4 mt-1">
+                                <p class="fonts">
+                                    Olá, me chamo Vitor e sou estudante de Análise e Desenvolvimento de Sistemas na EAJ-UFRN. Atualmente estou no 3º período.
+                                </p>
+                            
+                            </div>  
+                                <ul class="social-list">
+                                <li><i class="fa fa-google"></i></li>
+                                <li><i class="fa fa-linkedin"></i></li>
+                                <li><i class="fa fa-github"></i></li>
+                            </ul>
+                        </div>  
+                    </div>
+                    <div class="card p-3 py-4 ">
+                        <div class="text-center">
+                            <img src="./assets/img/imgJoaoVitor.jpg" width="100" class="rounded-circle">
+                        </div>
+                        <div class="text-center mt-3">
+                            <span class="bg-primary p-1 px-4 rounded text-white">Developer</span>
+                            <h5 class="mt-2 mb-0">João Vitor</h5>
+                            <div class="px-4 mt-1">
+                                <p class="fonts">
+                                    Olá, me chamo João e sou estudante de Análise e Desenvolvimento de Sistemas na EAJ-UFRN. Atualmente estou no 3º período.
+                                </p>
+                            
+                            </div>  
+                                <ul class="social-list">
+                                <li><i class="fa fa-google"></i></li>
+                                <li><i class="fa fa-linkedin"></i></li>
+                                <li><i class="fa fa-github"></i></li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer navbar-fixed-bottom offset-md-6 fw-bold">
+            <div class="container">
+                <span class="text-muted">© TADS-EAJ in 2024</span>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/4fe9bd0970.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

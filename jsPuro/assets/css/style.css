@@ -1,0 +1,104 @@
+.navbar{
+    box-shadow: 0px 0px 20px 0px rgba(159, 156, 156, 0.75);
+}
+
+#mainId{
+    margin-top: 5%;
+}
+
+footer {
+    position: relative;
+    bottom:0;
+    left:0;
+    font-size: 0.6rem;
+}
+
+body{
+    background:#ffffff;
+}
+
+a{
+    text-decoration:none;
+}
+
+.cardPunched{
+    color: white;
+    background-color: #0d6efd;
+    border-radius: 0.5%;
+    display:flex;
+}
+
+.col{
+    width: 10px;
+}
+
+section {
+    margin-top: 100px;
+}
+
+section .card{
+    border:none;
+    width: 33%;
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+
+
+section .card:after{    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:80%;
+    background-color:#0d6efd;
+    transform:scaleY(0);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+section .card:hover::after{
+    transform:scaleY(1);
+}
+
+
+section .fonts{
+    font-size:11px;
+}
+
+section .social-list{
+    display:flex;
+    list-style:none;
+    justify-content:center;
+    padding:0;
+}
+
+section .social-list li{
+    padding:10px;
+    color:#0d6efd;
+    font-size:19px;
+}
+
+
+section .buttons button:nth-child(1){
+       border:1px solid #0d6efd !important;
+       color:#0d6efd;
+       height:40px;
+}
+
+section .buttons button:nth-child(1):hover{
+       border:1px solid #0d6efd!important;
+       color:#fff;
+       height:40px;
+       background-color:#0d6efd;
+}
+
+section .buttons button:nth-child(2){
+       border:1px solid #0d6efd !important;
+       background-color:#0d6efd;
+       color:#fff;
+        height:40px;
+}
